@@ -1,0 +1,33 @@
+@media screen and (max-width: 1200px){
+    .block{
+        width: 50%;
+    }
+
+    .text{
+        color: white;
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width: 993px){
+    .block{
+        width: 75%;
+        background: #365;
+    }
+    .text{
+        color: red;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .block{
+        width: 25%;
+        background: #365;
+        opacity: .5;
+    }
+    .text{
+        text-transform: lowercase;
+    }
+}
