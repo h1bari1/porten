@@ -1,12 +1,89 @@
-@media screen and (max-width: 1139px) {
-    .cards-wrap{
-        
+@media screen and (max-width: 1139px) {}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        padding: 0 20px;
     }
 }
-@media screen and (max-width: 1200px) {
-    
-}
 
-@media screen and (max-width: 768px) {
-   
+@media screen and (max-width: 992px) {
+    .header-icons {
+        display: none;
+    }
+
+    nav {
+        position: relative;
+        width: 100%;
+        transition: 0.5s;
+    }
+
+    .burger-button{
+        width: 40px;
+        height: 40px;
+        box-shadow: 1px 1px 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: auto;
+        position: relative;
+        overflow: hidden;
+        z-index: 10;
+        transition: 0.5s;
+    }
+
+    .burger-line{
+        width: 100%;
+        height: 6px;
+        background: #000;
+        position: absolute;
+        transition: 0.5s;
+    }
+
+    .burger-line.one{
+        top: 0;
+        transition: 0.5s;
+    }
+    .burger-line.two{
+        top: calc(50% - 3px);
+        transition: 0.5s;
+    }
+    .burger-line.three{
+        bottom: 0;
+        transition: 0.5s;
+    }
+
+    .menu{
+        display: block;
+        position: fixed;
+        box-shadow: 0 0 12px;
+        padding: 20px;
+        border-radius: 20px 0 0 20px;
+        background: #fff;
+        top: 0;  
+        height: 100vh; 
+        width: 30%;
+        right: -100%;
+        padding-top: 100px;
+        transition: 0.5s;
+    }
+
+    .navigation.active .burger-line{
+        top: calc(50% - 3px);
+        transition: 0.5s;
+    }
+    .navigation.active .one{
+        transform: rotate(45deg);
+        transition: 0.5s;
+    }
+    .navigation.active .two{
+        display: none;
+        transition: 0.5s;
+    }
+    .navigation.active .three{
+        transform: rotate(-45deg);
+        transition: 0.5s;
+    }
+    .navigation.active .menu{
+        right: 0;
+        transition: 0.5s;
+    }
 }
