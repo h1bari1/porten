@@ -10,7 +10,7 @@
 } 
 
 .container{
-    max-width: 1110px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 .top-section{
@@ -180,4 +180,50 @@ header{
 
 .reverse{
     flex-direction: row-reverse;
+}
+
+.cards-section{
+    padding: 100px 0;
+}
+.cards-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.card-coffee{
+    width: 360px;
+    height: 510px;
+    border-radius: 20px;
+    box-shadow: 40px 15px 136px rgba(0,0,0,0.2);
+}
+
+.card-img{
+    width: 100%;
+}
+.card-img img{
+    width: 100%;
+}
+.card-body{
+    padding: 30px;
+}
+.card-header{
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 130%;
+}
+.card-description{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 160%;
+    color: rgba(0,0,0,0.7);
+}
+.card-link{
+    font-size: 16px;
+    font-weight: 600;
+    color: #FF4B32;
+    line-height: 160%;
 }
